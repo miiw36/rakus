@@ -1,0 +1,225 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+    min-height: 100vh;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+/* 商品画像 */
+.product-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 商品名 */
+.product-name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 商品説明 */
+.product-description {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.product {
+    display: flex;
+    flex: 1;
+    margin: 0 10px;
+
+}
+.products-container {
+    display: flex;
+}
+.product img {
+    margin-right: 20px;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+
+.product-info-container {
+    flex-grow: 1;
+}
+
+.product-info p {
+    margin: 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.product-info .product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-info .average-rating {
+    margin-bottom: 5px;
+}
+
+.product-info .price {
+    font-style: italic;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.error {
+    color: red;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="checkbox"] {
+    margin-top: 5px;
+}
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* リンクのスタイル */
+a {
+    color: #ff0000; /* リンクのテキストカラーを赤色に設定 */
+    text-decoration: none; /* リンクの下線を削除 */
+    font-weight: bold; /* リンクのテキストを太字にする */
+    text-decoration: underline;
+}
+
+/* リンクにマウスが乗ったときのスタイル */
+a:hover {
+    color: #ff6666; /* マウスが乗ったときのリンクのテキストカラーを薄赤色に設定 */
+}
+
+/* 星マークのスタイル */
+.star {
+    color: #ccc; /* 星マークの色 */
+    font-size: 20px;
+}
+
+.star-filled {
+    color: #fdd835; /* 評価された星マークの色 */
+    font-size: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    align-items: center; /*要素を垂直方向に中央揃えしています。*/
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.rating {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.review-title {
+    margin: 0; /* タイトルの左右に余白を設定 */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-details { /*レビュータイトルとその他の詳細を区別するため*/
+    flex: 1;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.post-date {
+    margin-right: 10px; /* 投稿日時の右に余白を設定 */
+    font-style: italic;
+}
+
+.review-content {
+    margin-top: 10px; /* レビュー内容の上に余白を設定 */
+}
+
+.user-name {
+    display: block; /* ブロックレベルの要素に変更 */
+    margin-bottom: 5px; /* 下部の余白を追加 */
+    font-weight: bold;
+}
